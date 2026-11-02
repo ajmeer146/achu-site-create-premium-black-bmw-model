@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW M4 Competition - Luxury Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">BMW M4</a>
+      <button class="menu-toggle" aria-label="Open navigation" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#performance">Performance</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('open');
+    }
+  </script>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>The Ultimate Driving Machine</h1>
+        <p class="tagline">BMW M4 Competition Coupe</p>
+        <a href="#performance" class="btn btn-primary">Explore Performance</a>
+        <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 800 400" class="bmw-svg">
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#C9A84C"/>
+              <stop offset="100%" stop-color="#8B6914"/>
+            </linearGradient>
+            <linearGradient id="blackGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#0a0a0a"/>
+              <stop offset="100%" stop-color="#121212"/>
+            </linearGradient>
+          </defs>
+          <rect width="800" height="400" fill="url(#blackGrad)"/>
+          <path d="M100,300 Q200,250 300,320 Q400,380 500,350 Q600,320 700,280 L700,350 L800,350 L800,400 L0,400 L0,350 Z" fill="url(#goldGrad)"/>
+          <path d="M150,280 Q250,220 350,290 Q450,350 550,320 L550,380 L600,380 L600,400 L100,400 Z" fill="none" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+          <circle cx="350" cy="260" r="30" fill="#C9A84C"/>
+          <circle cx="550" cy="280" r="25" fill="#C9A84C"/>
+          <line x1="150" y1="280" x2="150" y2="340" stroke="#C9A84C" stroke-width="1"/>
+          <line x1="350" y1="260" x2="350" y2="340" stroke="#C9A84C" stroke-width="1"/>
+          <line x1="550" y1="280" x2="550" y2="340" stroke="#C9A84C" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="features" class="section">
+      <div class="container">
+        <div="section-header">
+          <h2>Precision Engineering</h2>
+          <p>Handcrafted performance at its finest</p>
+        </div>
+        <div class="features-grid">
+          <div class="card">
+            <h3>M TwinPower Turbo</h3>
+            <p>Biturbo inline-6 engine delivering exhilarating power and torque</p>
+          </div>
+          <div class="card">
+            <h3>M xDrive All-Wheel Drive</h3>
+            <p>Optional all-wheel drive system for optimal traction</p>
+          </div>
+          <div class="card">
+            <h3>M Sport Suspension</h3>
+            <p>Adaptive suspension with precise handling characteristics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="performance" class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Performance</h2>
+          <p>Unleashed</p>
+        </div>
+        <div class="performance-grid">
+          <div class="card">
+            <h3>0-60 mph</h3>
+            <p>3.8 seconds</p>
+          </div>
+          <div class="card">
+            <h3>Top Speed</h3>
+            <p>155 mph (electronically limited)</p>
+          </div>
+          <div class="card">
+            <h3>Engine</h3>
+            <p>3.0L TwinPower Turbo Inline-6</p>
+          </div>
+          <div class="card">
+            <h3>Power</h3>
+            <p>503 hp @ 6,250 rpm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Design in Detail</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="gallery-img" style="background: linear-gradient(135deg, #1a1410 0%, #0a0a0a 100%);">
+              <svg width="300" height="200" viewBox="0 0 300 200">
+                <rect width="300" height="200" fill="#1a1410"/>
+                <path d="M50,100 Q150,50 250,100 Q150,150 50,100" fill="#C9A84C"/>
+                <circle cx="100" cy="80" r="8" fill="#E8C97C"/>
+                <circle cx="200" cy="80" r="8" fill="#E8C97C"/>
+              </svg>
+            </div>
+            <div class="gallery-caption">
+              <h3>Front Three-Quarter</h3>
+              <p>Aggressive stance</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img" style="background: linear-gradient(135deg, #1a1410 0%, #0a0a0a 100%);">
+              <svg width="300" height="200" viewBox="0 0 300 200">
+                <rect width="300" height="200" fill="#1a1410"/>
+                <path d="M50,100 Q150,50 250,100 Q150,150 50,100" fill="#C9A84C"/>
+                <circle cx="100" cy="80" r="8" fill="#E8C97C"/>
+                <circle cx="200" cy="80" r="8" fill="#E8C97C"/>
+              </svg>
+            </div>
+            <div class="gallery-caption">
+              <h3>Rear Three-Quarter</h3>
+              <p>Iconic quad exhaust</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-img" style="background: linear-gradient(135deg, #1a1410 0%, #0a0a0a 100%);">
+              <svg width="300" height="200" viewBox="0 0 300 200">
+                <rect width="300" height="200" fill="#1a1410"/>
+                <path d="M50,100 Q150,50 250,100 Q150,150 50,100" fill="#C9A84C"/>
+                <circle cx="100" cy="80" r="8" fill="#E8C97C"/>
+                <circle cx="200" cy="80" r="8" fill="#E8C97C"/>
+              </svg>
+            </div>
+            <div class="gallery-caption">
+              <h3>Side Profile</h3>
+              <p>Pure BMW DNA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>BMW M4</h3>
+          <p>Ultimate driving machine</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="#" title="Instagram"></a>
+          <a href="#" title="Facebook"></a>
+          <a href="#" title="Twitter"></a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 BMW M4. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
